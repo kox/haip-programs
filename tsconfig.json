@@ -1,10 +1,33 @@
 {
   "compilerOptions": {
-    "types": ["mocha", "chai"],
-    "typeRoots": ["./node_modules/@types"],
     "lib": ["es2015"],
     "module": "commonjs",
     "target": "es6",
-    "esModuleInterop": true
+    "esModuleInterop": true,
+    "noImplicitAny": false,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "paths": {
+      "*": [
+        "node_modules/*",
+        "app/*"
+      ]
+    },
+    "typeRoots": [
+      "./node_modules/@types",
+      "./app/typings"
+    ],
+    "rootDirs": [
+      "app/"
+    ],
+    "types": [
+      "node", 
+      "mocha", 
+      "chai"
+    ]
   }
 }
