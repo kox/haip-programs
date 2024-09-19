@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "lib": ["es2015"],
-    "module": "commonjs",
-    "target": "es6",
+    "lib": ["es2022"],
+    "module": "es2022",
+    "target": "es2022",
     "esModuleInterop": true,
     "noImplicitAny": false,
     "strictNullChecks": true,
@@ -11,6 +11,7 @@
     "outDir": "dist",
     "allowSyntheticDefaultImports": true,
     "baseUrl": ".",
+    "skipLibCheck": true, // optional, to speed up compilation
     "paths": {
       "*": [
         "node_modules/*",
@@ -29,5 +30,7 @@
       "mocha", 
       "chai"
     ]
-  }
+  },
+  "include": ["app/**/*.ts"],
+  "exclude": ["node_modules"]
 }
