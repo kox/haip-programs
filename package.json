@@ -4,6 +4,7 @@
   "scripts": {
     "server": "node --loader ts-node/esm --no-warnings=ExperimentalWarning app/server.ts",
     "create-token": "ts-node app/createHaipToken.ts",
+    "create-proposal-campaign": "node --loader ts-node/esm --no-warnings=ExperimentalWarning app/createProposalCampaign.ts",
     "lint:fix": "prettier */*.js \"*/**/*{.js,.ts}\" -w",
     "lint": "prettier */*.js \"*/**/*{.js,.ts}\" --check"
   },
