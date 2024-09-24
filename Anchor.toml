@@ -5,7 +5,7 @@ resolution = true
 skip-lint = false
 
 [programs.localnet]
-haip = "3ui9NfgAgv2m3WmozwzaraxWa1DsnAnEroRVM4b6rbKv"
+haip = "2PxZ18HnizcT2oj944dhLdTUrzYXHZ8SmRFSJLYH8KWH"
 
 [registry]
 url = "https://api.apr.dev"

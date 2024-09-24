@@ -1,36 +1,10 @@
 {
   "compilerOptions": {
-    "lib": ["es2022"],
-    "module": "es2022",
-    "target": "es2022",
-    "esModuleInterop": true,
-    "noImplicitAny": false,
-    "strictNullChecks": true,
-    "moduleResolution": "node",
-    "sourceMap": true,
-    "outDir": "dist",
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "skipLibCheck": true, // optional, to speed up compilation
-    "paths": {
-      "*": [
-        "node_modules/*",
-        "app/*"
-      ]
-    },
-    "typeRoots": [
-      "./node_modules/@types",
-      "./app/typings"
-    ],
-    "rootDirs": [
-      "app/"
-    ],
-    "types": [
-      "node", 
-      "mocha", 
-      "chai"
-    ]
-  },
-  "include": ["app/**/*.ts"],
-  "exclude": ["node_modules"]
+    "types": ["mocha", "chai"],
+    "typeRoots": ["./node_modules/@types"],
+    "lib": ["es2015"],
+    "module": "commonjs",
+    "target": "es6",
+    "esModuleInterop": true
+  }
 }

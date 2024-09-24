@@ -9,13 +9,22 @@ pub use constants::*;
 pub use instructions::*;
 pub use state::*;
 
-declare_id!("3ui9NfgAgv2m3WmozwzaraxWa1DsnAnEroRVM4b6rbKv");
+declare_id!("2PxZ18HnizcT2oj944dhLdTUrzYXHZ8SmRFSJLYH8KWH");
 
 #[program]
 pub mod haip {
     use super::*;
 
-    pub fn initialize(ctx: Context<Initialize>) -> Result<()> {
-        initialize::handler(ctx)
+    pub fn create_proposal(ctx: Context<CreateProposal>) -> Result<()> {
+        ctx.accounts.create_proposal(&ctx.bumps)
+    }
+
+    pub fn vote_proposal(ctx: Context<VoteProposal>) -> Result<()> {
+        ctx.accounts.vote()
+    }
+
+    pub fn solve_proposal(ctx: Context<SolveProposal>) -> Result<()> {
+        ctx.accounts.solve_proposal()
     }
 }
+
